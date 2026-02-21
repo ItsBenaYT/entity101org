@@ -318,13 +318,67 @@ h1, h2, h3, h4, .logo {
     line-height: 1.7;
 }
 
-/* Grids & Cards */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+/* Services List (Non-grid style) */
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+.service-row {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.service-row:hover {
+    border-color: var(--primary);
+    transform: translateX(10px);
+    background: linear-gradient(90deg, var(--bg-card), rgba(0, 229, 255, 0.03));
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-num {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.1);
+    min-width: 40px;
+}
+
+.icon-small {
+    font-size: 1.5rem;
+}
+
+.service-header h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.service-row p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-left: 60px;
+}
+
+/* Grids & Cards */
 .about-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -364,46 +418,6 @@ h1, h2, h3, h4, .logo {
     margin-bottom: 25px;
     display: inline-block;
     filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
-}
-
-.card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    padding: 40px 30px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    border-color: var(--border-hover);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 229, 255, 0.05);
-}
-
-.card .icon {
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-    background: rgba(0, 229, 255, 0.1);
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    border: 1px solid rgba(0, 229, 255, 0.2);
-}
-
-.card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #fff;
-}
-
-.card p {
-    color: var(--text-muted);
-    line-height: 1.7;
-    font-size: 0.95rem;
 }
 
 /* Stats */
@@ -450,56 +464,6 @@ h1, h2, h3, h4, .logo {
 .stat-box p {
     color: var(--text-muted);
     font-size: 0.95rem;
-}
-
-/* Team */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-}
-
-.team-card {
-    text-align: center;
-    padding: 40px 20px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.team-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-.team-avatar {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 25px;
-    background: linear-gradient(135deg, rgba(0, 229, 255, 0.2), rgba(112, 0, 255, 0.2));
-    border: 2px solid rgba(255,255,255,0.1);
-    border-radius: 50%;
-    position: relative;
-}
-
-.team-avatar::after {
-    content: '';
-    position: absolute;
-    inset: -6px;
-    border-radius: 50%;
-    border: 1px dashed var(--primary);
-    opacity: 0.3;
-}
-
-.team-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.team-card p {
-    color: var(--text-muted);
-    font-size: 0.9rem;
 }
 
 /* Contact / CTA */
@@ -627,12 +591,10 @@ footer {
     opacity: 0;
     transform: translateY(40px);
     animation: slideUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-    /* Added animation-timeline for scroll based animations if supported */
     animation-timeline: view();
     animation-range: entry 10% cover 30%;
 }
 
-/* Fallback for browsers without animation-timeline */
 @supports not (animation-timeline: view()) {
     .slide-up {
         animation: slideUpFallback 1s forwards;
@@ -683,6 +645,8 @@ footer {
     .about-grid { grid-template-columns: 1fr; }
     .hero-actions { flex-direction: column; }
     .btn { width: 100%; }
+    .service-row p { margin-left: 0; }
+    .service-row:hover { transform: translateY(-5px); }
 }
 
 @media (max-width: 768px) {
