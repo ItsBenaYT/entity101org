@@ -1,0 +1,57 @@
+MUY IMPORTANTE PRESTA ATENCION A ESTO, LA PAGINA TIENE QUE SER ESTATICA, ES DECIR FUNCIONAR SOLO CON UN INDEX.HTML Y LOS CSS NECESARIOS EN LA MISMA CARPETA, TE HE PASADO UNA RCHIVO CSS Y INDEX QUE CORREGIRAS PARA HACER MAS BONITO Y QUITA EL FORMULARIO Y AÑADE TODO LO NECESARIO PARA DAR CONFIANZA AL CLIENTE. NO USES BACKEND NI NADA. SOLO FRONTEND. EN INGLES SIEMPRE
+
+
+Create a highly innovative, elegant, and professional static website for an investment company specializing in Roblox game projects.
+⚠️ Important Requirements:
+
+
+The project must include only an index.html and a styles.css file.
+
+
+It must be pure front-end (no backend, no frameworks, no JavaScript) — only HTML and CSS.
+
+
+The design should be modern, aesthetic, and look like a premium investment agency site.
+
+
+💼 About the company (ENitty101):
+ENitty101 invests strategically in Roblox games by purchasing a percentage of a project in exchange for promoting and managing it. The company helps developers maximize growth through:
+
+
+High-performance advertising campaigns, both natively inside Roblox and externally via large influencer networks.
+
+
+Advanced analytics management and game performance tracking.
+
+
+Premium quality testing sessions to ensure top-tier gameplay and retention.
+
+
+Game quality improvement, optimization, and monetization strategy.
+
+
+Update planning and full project management.
+
+
+Immediate operational support once an agreement is made.
+
+
+📈 Achievements and expertise:
+ENitty101 consistently achieves strong launch metrics, averaging 1.5K–5K concurrent users (CCU) in the first days after reaching Roblox’s algorithmic spotlight.
+The team possesses deep expertise on Roblox’s algorithm behavior, market trends, user engagement metrics, and advertising mechanics.
+🎨 Design goals:
+
+
+Visually convey trust, innovation, and performance.
+
+
+Use a dark, sleek, or futuristic investment style theme with clear typography and professional layout.
+
+
+Include multiple sections such as Home, About, Services, Results, Team, and Contact.
+
+
+All layout and visual effects should be done exclusively with CSS transitions/animations, no scripts.
+
+
+The final result should look like a top-tier investment and marketing agency website adapted for the Roblox gaming industry, showing clarity, technical competence, and visual excellence.
